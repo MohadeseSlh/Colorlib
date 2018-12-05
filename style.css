@@ -1,0 +1,573 @@
+
+.header{
+    height: 60px;
+    background-color: #444;
+
+}
+.logo {
+    width: 10%;
+    height: 60px;
+    padding: 0 15px;  
+    display: flex;
+    justify-content: center;
+    align-items: center  
+}
+
+.pull-left{
+    float:left !important;
+}
+img{   
+    width: 100%;
+
+}
+#wisdom{
+    position: relative;
+    display: block;
+    text-align: center;
+    border: solid 1px #c3c3c3;
+    background-color: rgb(32, 28, 28); 
+    color: lightgray ;
+    width:10%;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0;
+    
+}
+#wisdom a{
+    color: lightgray;
+    text-decoration: none
+}
+#panel {
+    text-align: center;
+    border: solid 1px #c3c3c3;
+    background-color: rgb(32, 28, 28); 
+    color: lightgray ;
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    display: none;
+}
+.icon-btn{
+    width: 4%;
+    height: 60px;
+    padding: 0 15px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left:0.25px solid lightgray;
+    
+}
+.icon-btn:hover{
+    background-color: black
+}
+.icon-btn a{
+    color: lightgray;
+    text-decoration: none ;
+}
+.pull-right {
+    float: right;
+}
+#active  {
+    background-color: rgb(31, 177, 31);
+}
+#active:hover{
+    background-color: black
+}
+#con1{
+    background-image: url("images/bg_1.jpg");
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+    
+}
+
+.small-navbar-light {
+    background: transparent !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: 30px;
+    }
+@media (max-width: 991.98px) {
+    .small-navbar-light {
+    background: #000 !important;
+    top: 0;
+    position: relative;
+    
+    } }
+.navbar-brand i{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+}
+.navbar-brand span{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px
+}
+.navbar-brand span:last-child{
+    font-size: 40px;
+    font-weight: 600;
+  
+}
+.navbar-toggler{
+    border: 0
+}
+.txt-and-button{
+    position:relative;
+    top:150px;
+
+}
+.txt-and-button h1 {
+    font-size: 60px;
+    font-weight: 200
+}
+strong{
+    font-weight: bold
+}
+#btn11{
+    background-color: white;
+    color:red;
+
+}
+#btn2 , .btn{
+    font-weight: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 30px;
+    outline: none
+}
+#btn2:hover{
+    color: rgb(224, 56, 56);
+    background-color: transparent
+}
+#con2{
+    background-color: rgba(39,46,79);
+    height: 150px;
+}
+#right{
+    border-right: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-right: 35px;
+    height: 100%;
+
+}
+#right h3{
+    color: white;
+    font-size: 30px
+}
+#right p{
+    color: lightgray;
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+#col1 ,#col-2{
+    height: 100%;
+
+}
+#col-timer , #col-btn{
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#col-timer{
+    padding-top: 40px
+}
+#col-timer span{
+    width: 20%;
+    color:lightgray;
+    font-size: 40px;
+    height: 100%;
+}
+#col-unites span{
+    width: 20%;
+    color:lightgray;
+    font-size: 18px ;
+    padding-left: 5% ;
+    
+}
+#col-img{
+    background-image: url(images/about.jpg);
+    width:100%;
+    height: 700px;
+    background-position: center center;
+    background-size: cover;
+}
+#col-3{
+    padding:8%;
+    margin-top: 50px
+}
+#col-3 h3{
+    line-height: 1.5;
+    font-weight: 400;
+}
+#col-3 p, #p2 , #p3{
+    line-height: 2;
+    color:lightslategrey;
+    font-size: 17px;
+    font-weight: 200;
+}
+#video-btn{
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    right: 48%;
+    margin-right: -50px;
+    border-radius: 50%;
+    background: #ff5656;
+    z-index: 1;
+    top: 150%;
+    animation: pulse 2s infinite;
+    
+}
+#video-btn span{
+    position: absolute;
+    font-size: 45px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-30%, -48%);
+    -ms-transform: translate(-30%, -48%);
+    transform: translate(-30%, -48%);
+}
+#p1{
+    font-size: 15px;
+    color: lightgray;
+    font-weight: 400;
+}
+#h1{
+    font-weight: 700;
+    font-size: 40px
+}
+.card , .card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background-color: transparent  
+}
+#row1{
+    margin-top: 100px
+}
+#jum1{
+    background-color: white
+}
+.pink{
+    width: 110px;
+    height: 110px;
+    position: relative;
+    background: #ffe5e5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.pink i{
+    align-self: center !important;
+    color: #ff5656;
+}
+.card-text,{
+    margin-top: 50px
+}
+#col-4{
+    margin-top: 100px
+}
+.h-1{
+    font-size: 40px;
+    font-weight: 400;
+    color: white
+}
+.p4{
+    font-size: 20px;
+    color: white;
+    font-weight: 200
+}
+.email{
+    font-weight: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 70%
+}
+::placeholder{
+    color:white;
+}
+input{
+    color: white;
+    position: relative;
+}
+#telegram{
+    right: 100px;
+    position: absolute;
+    top:77%;
+    right: 18%;
+    color: white
+}
+#jum2,#con3{
+    background: linear-gradient(to right, rgb(162, 211, 190) 14%,rgb(5, 159, 170) 34%,rgba(54, 104, 107, 0.925) 64%, rgb(7, 16, 141) 100%);
+}
+#a-video1{
+    background-image: url(images/sermons-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    width:100%;height:200px
+}
+#a-video2{
+    background-image: url(images/sermons-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    width:100%;height:200px
+}
+#a-video3{
+    background-image: url(images/sermons-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    width:100%;height:200px
+}
+#video-sec-btn{
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    right: 55%;
+    margin-right: -50px;
+    border-radius: 50%;
+    background: #ff5656;
+    z-index: 1;
+    top: 15%;
+    animation: pulse 2s infinite;
+    
+}
+#video-sec-btn span{
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-30%, -48%);
+    -ms-transform: translate(-30%, -48%);
+    transform: translate(-30%, -48%);
+}
+.btn-sec{
+    font-weight: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 30px;
+    outline: none;
+    padding-right: 50%;
+    padding: 15px;
+    border: 1px solid #ff5656
+}
+btn-sec:hover{
+    background-color: white;
+    color: #ff5656
+}
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#jum3 , #con4{
+    background-color: #f7f5f5
+}
+.img-back{
+    width: 110px;
+    height: 110px;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:15px
+}
+.img-back img{
+    align-self: center !important;
+    border-radius: 50%;
+    
+}
+.p5{
+    font-size: 20px;
+    color: gray;
+    font-weight: 200
+}
+.col-md-4 span{
+    font-size: 60px
+}
+#col-img2{
+    background-image: url(images/event.jpg);
+    width:100%;
+    height: 800px;
+    background-position: center center;
+    background-size: cover;
+}
+.h-2{
+    font-size: 40px;
+    font-weight: 650;
+    color:white
+}
+.p6{
+    font-size: 20px;
+    color: lightgrey;
+    font-weight: 400;
+    text-align: right
+}
+
+.h-3{
+    color: #c3c3c3;
+    font-size: 12px;
+    font-weight: 400
+}
+.h-4{
+    font-size: 14px;
+    color: grey;
+    font-weight: 300;
+    margin: 0
+}
+.-img3{
+    
+        background-image: url(images/event-1.jpg);
+        width:100%;
+        height: 250px;
+        display: block;
+        background-position: center center;
+        background-size: cover;
+        margin-top: 20px
+    
+}
+.-img4{
+    
+    background-image: url(images/event-2.jpg);
+    width:100%;
+    height: 250px;
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 20px
+
+}
+#col-3{
+    margin-top: 0px
+}
+#con5{
+    padding:0
+}
+.myimg{
+    background-image: url(images/sermons-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    width:100%;height:300px
+}
+#p7,#p8 ,#p9{
+    padding: 10px;
+}
+#h-5{
+    padding:10px;
+    font-weight: 500
+}
+#con6 , #jum4{
+    background-color: rgb(39,46,79)
+}
+.logoo{
+    padding: 0
+}
+.logoo span{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px   
+}
+.logoo span:last-child{
+    font-size: 40px;
+    font-weight: 600;
+  
+}
+.p10{
+    font-size: 18px;
+    color: lightgray;
+    font-weight: 200;
+    margin-top: 30px
+}
+.p11{
+    font-size: 18px;
+    color: lightgray;
+    font-weight: 200;
+    margin-top: 70px
+}
+.p12{
+    font-size: 18px;
+    color: lightgray;
+    font-weight: 200;
+    margin-top: 10px
+}
+.h-6{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;   
+}
+ul{
+    list-style: none
+}
+li span{
+    color: white;
+    text-decoration: none;
+    
+}
+.ahref{
+    color: lightgray;
+    text-decoration: none
+}
+.ahref:hover{
+    color: white;
+    text-decoration: none
+}
+ul li span{
+    margin-top: 30px
+}
+#btn12{
+    color: white;
+    background-color:#ff5656 
+}
+#btn12:hover{
+    background-color: transparent;
+    color: #ff5656;
+    border:2px solid #ff5656
+}
+ul.list-inline li a {
+    font-size: 5px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(182, 182, 182);
+    color: white;display: flex;
+    justify-content:center;
+    align-items:center
+}
+ul.list-inline li a:hover {text-decoration: none}
+footer ul li a{
+    color:gray;
+    font-size: 12px;   
+}
+#vid{
+    width:1000px;
+    
+}
