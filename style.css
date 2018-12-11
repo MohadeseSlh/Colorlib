@@ -1,4 +1,7 @@
+html{
 
+    background-color: rgb(39,46,79)
+}
 .header{
     height: 60px;
     background-color: #444;
@@ -76,13 +79,15 @@ img{
     background-color: black
 }
 #con1{
+
     background-image: url("images/bg_1.jpg");
     background-size: cover;
     height: 550px;
     position: relative;
-    -webkit-filter: hue-rotate(90deg);
-    filter: hue-rotate(90deg);
-    
+   /* -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);*/
+    background-position: center center;
+    background-size: cover;
 }
 
 .small-navbar-light {
@@ -120,6 +125,9 @@ img{
 .navbar-toggler{
     border: 0
 }
+#home:hover{
+    color: white
+}
 .txt-and-button{
     position:relative;
     top:150px;
@@ -132,21 +140,24 @@ img{
 strong{
     font-weight: bold
 }
-#btn11{
-    background-color: white;
-    color:red;
-
+#btn11{   
+    color:white;
+}
+#btn11:hover{   
+    background-color:white;
+    color: #ff5656
 }
 #btn2 , .btn{
     font-weight: 20px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 30px;
     margin-top: 30px;
     outline: none
 }
 #btn2:hover{
     color: rgb(224, 56, 56);
-    background-color: transparent
+    background-color: transparent;
+    border: 2px solid #ff5656
 }
 #con2{
     background-color: rgba(39,46,79);
@@ -182,17 +193,19 @@ strong{
     padding-top: 40px
 }
 #col-timer span{
-    width: 20%;
+    width: 100%;
     color:lightgray;
     font-size: 40px;
     height: 100%;
 }
 #col-unites span{
-    width: 20%;
+    width: 100%;
     color:lightgray;
-    font-size: 18px ;
-    padding-left: 5% ;
-    
+    font-size: 15px ;
+    padding-left: 5% ;   
+}
+.unites{
+    margin-left: 8%
 }
 #col-img{
     background-image: url(images/about.jpg);
@@ -278,11 +291,12 @@ strong{
     align-self: center !important;
     color: #ff5656;
 }
-.card-text,{
-    margin-top: 50px
+.card-text{
+    margin-top: 30px; 
 }
+
 #col-4{
-    margin-top: 100px
+    margin-top: 150px
 }
 .h-1{
     font-size: 40px;
@@ -314,12 +328,20 @@ input{
 #telegram{
     right: 100px;
     position: absolute;
-    top:77%;
+    top:60%;
     right: 18%;
-    color: white
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-color: transparent;
+    webkit-box-shadow: none;
+    box-shadow: none;
 }
+
 #jum2,#con3{
-    background: linear-gradient(to right, rgb(162, 211, 190) 14%,rgb(5, 159, 170) 34%,rgba(54, 104, 107, 0.925) 64%, rgb(7, 16, 141) 100%);
+    background: linear-gradient(to right, rgb(162, 211, 190) 10%,rgb(16, 158, 168) 30%,rgba(31, 53, 158, 0.925) 44%, rgb(7, 16, 141) 100%);
+    height: 650px;
 }
 #a-video1{
     background-image: url(images/sermons-1.jpg);
@@ -339,17 +361,20 @@ input{
     background-size: cover;
     width:100%;height:200px
 }
+#row1 .img{
+    height: 300px;
+}
 #video-sec-btn{
     display: block;
     position: absolute;
     width: 20%;
-    height: 25%;
+    height: 18%;
     right: 55%;
     margin-right: -50px;
     border-radius: 50%;
     background: #ff5656;
     z-index: 1;
-    top: 15%;
+    top: 25%;
     animation: pulse 2s infinite;
     
 }
@@ -498,6 +523,7 @@ btn-sec:hover{
 .logoo span:last-child{
     font-size: 40px;
     font-weight: 600;
+    margin-left: -5px;
   
 }
 .p10{
@@ -513,10 +539,11 @@ btn-sec:hover{
     margin-top: 70px
 }
 .p12{
-    font-size: 18px;
+    font-size: 17px;
     color: lightgray;
-    font-weight: 200;
-    margin-top: 10px
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 5%
 }
 .h-6{
     font-size: 20px;
@@ -533,7 +560,9 @@ li span{
 }
 .ahref{
     color: lightgray;
-    text-decoration: none
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
 }
 .ahref:hover{
     color: white;
@@ -551,18 +580,23 @@ ul li span{
     color: #ff5656;
     border:2px solid #ff5656
 }
-ul.list-inline li a {
+.icons{
     font-size: 5px;
     display: block;
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: rgb(182, 182, 182);
+    background-color: rgba(255, 255, 255, 0.05);
     color: white;display: flex;
     justify-content:center;
-    align-items:center
+    align-items:center;  
+    margin-top: 10px  
 }
-ul.list-inline li a:hover {text-decoration: none}
+.icons:hover{
+    text-decoration: none;
+    color: white
+}
+
 footer ul li a{
     color:gray;
     font-size: 12px;   
@@ -570,4 +604,22 @@ footer ul li a{
 #vid{
     width:1000px;
     
+}
+#close{ 
+    width:1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    border-color: transparent;
+    webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: white
+}
+
+#hidden{
+    position:absolute;width:100%;height:10000px;display: none;background-color: transparent;z-index:100;;
 }

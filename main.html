@@ -1,4 +1,4 @@
-<html>
+ <html>
     <head>
         <title>Colorlib | Free Bootstrap Website Template</title>
         <meta charset="utf-8">
@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        
-
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <script src="script.js"></script>
         
     </head>
     <body>
@@ -26,7 +26,7 @@
     
 <!--remove icon------------------------------------------------------------------->
     <div class="icon-btn header-btn pull-right ">
-            <a href="#"  class="fa fa-remove fa-2x"></a>
+            <a href="#"  class="fa fa-times fa-2x"></a>
         </div>
 <!--download icon----------------------------------------------------------------> 
 <div class="icon-btn header-btn pull-right "id="active">
@@ -48,13 +48,17 @@
      
 </header>
 <!----------------------------------------------------------------------------------------------->
-<div style="position:absolute;width:100%;height:10000px;display: none;background-color: gray;z-index:100" id="hidden">
+<div id="hidden">
     <div class="container-fluid text-center">
-    <div class="col-md-12" style="margin-top: 500px">
+    <div class="col-md-12" style="margin-top: 100px;">
+            <button class="btn-block text-right" id="close">
+                    <i class="fa fa-times fa-2x" class="closeicon" ></i>
+                </button>
         <video controls id="vid" >
-                <source src="https://vimeo.com/45830194" type="video/mp4">
+            <source src="https://vimeo.com/45830194" type="video/mp4">
                 <source src="https://vimeo.com/45830194" type="video/ogg">
                 Your browser does not support HTML5 video.
+                
               </video>
             </div>
             </div>
@@ -85,7 +89,7 @@
                                   <div class="collapse navbar-collapse" id="collapsibleNavbar">
                                   <ul class="navbar-nav ml-auto">
                                     <li class="nav-item">
-                                      <a class="nav-link text-gray" href="#yellow">Home</a>
+                                      <a class="nav-link text-gray" href="#yellow" id="home">Home</a>
                                     </li>
                                     <li class="nav-item">
                                       <a class="nav-link text-white" href="#jum2">About</a>
@@ -110,6 +114,7 @@
                 </div>
                 
                     <div class="txt-and-button bg-transparent text-center text-white" data-aos="fade-up">
+                        
                        <h1> Needing <strong> jesus Christ </strong>Together</h1>
                        <button type="button" class="btn btn-outline-light" id ="btn11"><a>Save your spirit</a></button>                   
                     </div>
@@ -131,11 +136,11 @@
                 <div class="container ">
                     <div class="row ">
 <!--timer and unites------------------------------------------------------------------------------------>                        
-                        <div class="col-md-8 " id="col-2">
+                        <div class="col-md-8 sm-12" id="col-2">
                             <div class="container-fluid">
                                 <div class="row" >
 <!--timer---------------------------------------------------------------------------------------------------->                                    
-                                    <div class="col-md-12 sm-12"id="col-timer">
+                                    <div class="col-md-12 "id="col-timer">
                                             <span id="days"></span>
                                             <span id="hours"></span>
                                             <span id="minutes"></span>
@@ -144,13 +149,13 @@
                                 </div>
                             </div>
 <!--unites---------------------------------------------------------------------------------------------------->
-                            <div class="container-fluid " style="margin-top: -50px;padding-left:35px;">
+                            <div class="container-fluid " style="margin-top: -50px;padding-left:0;">
                                     <div class="row">
-                                        <div class="col-md-12 sm-12" id="col-unites">
-                                                <span>days</span>
-                                                <span>hours</span>
-                                                <span>minutes</span>
-                                                <span>seconds</span>
+                                        <div class="col-md-12 " id="col-unites">
+                                                <span >days</span>
+                                                <span class="unites">hours</span>
+                                                <span class="unites">minutes</span>
+                                                <span class="unites"style="margin-left: 5%">seconds</span>
                                         </div>
                                     </div>
                                 </div>
@@ -218,7 +223,7 @@
         <div class="card ">
             <div class="pink">
                 
-                <i class="fa fa-hand-holding-heart  fa-4x"></i>
+                <i class="fas fa-hand-holding-heart  fa-4x"></i>
             </div>
         </div>
         <div class="card-text text-center" >
@@ -264,10 +269,18 @@
             <div class="col-md-5 sm-12 text-center" id="col-4" data-aos="fade-up">
                 <h1 class="h-1">Subcribe to our Newsletter</h1>
                 <p class="p4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-                <div class="input " >
-                <input type="email" placeholder="Enter Email Address" class="email">
-                <i class= "fab fa-telegram fa-3x" id="telegram"></i> 
-            </div>
+                
+            <form name="form1" action="#" onsubmit="required()">
+                    <ul>
+                    <li><input type='email' name ='text1' placeholder="Enter Email Address" class="email"/></li>
+                    
+                    <li><button type="submit" class="btn" id="telegram">
+                            <i class="fab fa-telegram-plane " ></i>
+                        </button></li>
+                    </ul>
+                    </form>
+
+        
             </div>
         </div>
 
@@ -547,8 +560,9 @@
         </div>
     </section>    
 </main>
+<!--footer---------------------------------------------------------------------------------------->
 <footer style="background-color: rgb(39,46,79)">
-    <div class="container" id="con6">
+    <div class="container" id="con6" >
         <div class="jumbotron" id="jum4">
             <div class="row">
             <div class="col-md-3">
@@ -583,163 +597,86 @@
                     <p class="p11 text-left"><a href="#" class="ahref">198 West 21th Sreeet,Suite 721 New York NY 10016</a></p>
                     <p class="p12 text-left"><a href="#" class="ahref">+ 1235 2355 98 </a></p>
                     <p class="p12 text-left"><a href="#" class="ahref">info@yoursite.com</a></p>
-                    <p class="p12 text-left"<a href="#" class="ahref">email@email.com</a></p>
+                    <p class="p12 text-left"><a href="#" class="ahref">email@email.com</a></p>
             </div>
             <div class="col-md-3">
                     <div >
                         
                             <ul>
-                              <li><span class="fa fa-map-marker "></span><span class="p12 text-left"><a href="#" class="ahref">203 Fake St. Mountain View, San Francisco, California, USA</a></span></li>
-                              <li><span class="fa fa-phone "></span><span class="p12 text-left"><a href="#" class="ahref">+2 392 3929 210</a></span></li>
-                              <li><span class="fa fa-envelope"></span><span class="p12 text-left"><a href="#" class="ahref">info@yourdomain.com</a></span></li>
-                              <li><span class="fa fa-clock"></span><span class="p12 text-left"><a href="#" class="ahref">Saturday — Sunday 8:00am - 5:00pm</a></span></li>
-                            </ul>
-                            <ul class="list-inline" style="margin-top: 100px" data-aos="fade-up">
-                                <li class="list-inline-item twitter" >
-                                  <a href="#"><i class="fab fa-twitter fa-5x" ></i></a>
-                                </li>
-                                <li class="list-inline-item facebook">
-                                    <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+                              <li><span class="fa fa-map-marker "></span><span class="p12 text-left">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                              <li><span class="fa fa-phone "></span><span class="p12 text-left"><a href="#" class="ahref" style="color:white">+2 392 3929 210</a></span></li>
+                              <li><span class="fa fa-envelope"></span><span class="p12 text-left" ><a href="#" class="ahref" style="color:white">info@yourdomain.com</a></span></li>
+                              <li><span class="fa fa-clock"></span><span class="p12 text-left">Saturday — Sunday 8:00am - 5:00pm</span></li>
+                              <li class="list-inline-item twitter" >
+                                    <a href="#" class="icons"><i class="fab fa-twitter fa-5x" data-aos="fade-up"></i></a>
                                   </li>
-                                  <li class="list-inline-item google-plus-g">
-                                      <a href="#"><i class="fab fa-google-plus-g fa-5x" ></i></a>
+                                  <li class="list-inline-item facebook" data-aos="fade-up">
+                                      <a href="#" class="icons"><i class="fab fa-facebook fa-5x"></i></a>
                                     </li>
-                              </ul>
+                                    <li class="list-inline-item google-plus-g" data-aos="fade-up">
+                                        <a href="#" class="icons"><i class="fab fa-google-plus-g fa-5x" ></i></a>
+                                      </li>
+                            </ul>
                             
                           </div>
             </div>
 
         </div>
-        <div class="row justify-content-center">
-            <div class="col-md-7">
+        <div class="row justify-content-center" style="margin-top: 50px">
+            <div class="col-md-8">
                 <p class="p12 text-left"> Copyright ©2018 All rights reserved | This template is made with <i class="fa fa-heart"></i> by<a href="#" class="ahref"> Colorlib</a></p>
             </div>
         </div>
     </div>
     </div>
 </footer>
-<!-----------------------jquery for wisdom-->
-<script> 
-        $(document).ready(function(){
-            $("#wisdom").click(function(){
-                $("#panel").slideToggle("slow");
-            });
-        });        
-        </script>
-<!------------------------jquery for button--> 
-<script>
 
-        $(document).ready(function(){
-    $("#btn1").on({
-        focus: function(){
-            $(this).css("color", "black");
-            $(this).css("border", "3px solid rgba(54, 175, 231, 0.705)");
-        },  
-        mouseleave: function(){
-            $(this).css("color", "rgb(224, 56, 56)");
-            $(this).css("border", "1px solid white");
-        }, 
- 
+
+ <!--number1------------------------- ----->
+ <script>
+$('.Single').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
     });
 });
-    </script> 
-<!--counter-------------------------------------------------------------------------------------------------------> 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("dec 30, 2018 15:37:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("days").innerHTML = days  
-
-        document.getElementById("hours").innerHTML =hours 
-
-    document.getElementById("minutes").innerHTML =minutes 
-
-    document.getElementById("seconds").innerHTML =seconds ;
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>    
- <!--number1--------------------------------->
- <script>
- $({ Counter: 0 }).animate({
-    Counter: $('.Single').text()
-  }, {
-    duration: 1000,
-    easing: 'swing',
-    step: function() {
-      $('.Single').text(Math.ceil(this.Counter));
-    }
-  }); 
-</script>  
+</script> 
  <!--number2--------------------------------->
  <script>
-        $({ Counter: 0 }).animate({
-           Counter: $('.Single2').text()
-         }, {
-           duration: 1000,
-           easing: 'swing',
-           step: function() {
-             $('.Single2').text(Math.ceil(this.Counter));
-           }
-         }); 
+$('.Single2').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
        </script> 
         <!--number3--------------------------------->
  <script>
-        $({ Counter: 0 }).animate({
-           Counter: $('.Single3').text()
-         }, {
-           duration: 1000,
-           easing: 'swing',
-           step: function() {
-             $('.Single3').text(Math.ceil(this.Counter));
-           }
-         }); 
+$('.Single3').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
        </script> 
- <!--email--------------->  
- 
- <script>
 
-/*$(document).ready(function() {
-    if($('.email').val().length == 0){
-        alert('Please enter your email.');
-        return false;
-    }
-}); */
-</script>
-<script>
-    $(document).ready(function(){
-        $('.card2').click(function(){
-            $('#hidden').css('display','block')
-        })
-    })
-</script>
-<script>
-        $(document).ready(function(){
-            $('#video-btn').click(function(){
-                $('#hidden').css('display','block')
-            })
-        })
-    </script>
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
